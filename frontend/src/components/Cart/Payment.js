@@ -32,9 +32,9 @@ const Payment = () => {
 
 	const checkoutHandlerONLINE = async () => {
 
-		const { data: { key } } = await axios.get("https://ragsaatextiles.herokuapp.com/api/getkey")
+		const { data: { key } } = await axios.get("https://ragsaatextiles.com/api/getkey")
 
-		const { data: { order } } = await axios.post("https://ragsaatextiles.herokuapp.com/api/V1/checkout", {
+		const { data: { order } } = await axios.post("https://ragsaatextiles.com/api/V1/checkout", {
 			paymentData
 		})
 
@@ -80,7 +80,7 @@ const Payment = () => {
 			razorpay_order_id: PaymentIF.razorpay_order_id,
 			razorpay_signature: PaymentIF.razorpay_signature,
 		}
-		const { data } = await axios.post("https://ragsaatextiles.herokuapp.com/api/V1/paymentVerification", {
+		const { data } = await axios.post("https://ragsaatextiles.com/api/V1/paymentVerification", {
 			paymentt
 		})
 		if (data.signatureIsValid === "true") {
