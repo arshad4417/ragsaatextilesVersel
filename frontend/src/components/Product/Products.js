@@ -14,13 +14,15 @@ import { Typography } from '@material-ui/core'
 
 
 
-const categories = [
+  const categories = [
     "Kurties",
-    "Kid's",
-    "T-shirt",
-    "Shirt",
-    "Jeans",
-    "Lahnga",
+    "Kaftan",
+    "Night Suits",
+    "Shrug",
+    "Top",
+    "Short-Kurta",
+    "Embroideroi Ethenic Set",
+    "Suits"
 ]
 
 const Products = (props) => {
@@ -53,6 +55,16 @@ const Products = (props) => {
             <Header />
             <div className="main">
                 <div className="filterBox">
+                    <ul className='categoryBox' >
+                        {categories.map((category) => (
+                            <li className='category-link'
+                                key={category}
+                                onClick={() => setCategory(category)}>
+                                {category}
+                            </li>
+
+                        ))}
+                    </ul>
                     <Typography className='a123'>Price - </Typography>
                     <div className='priceBox' >
                         <Slider className='slider'
@@ -64,16 +76,6 @@ const Products = (props) => {
                             max={9999}
                         /></div>
                     <Typography className='a123'>Categories - </Typography>
-                    <ul className='categoryBox' >
-                        {categories.map((category) => (
-                            <li className='category-link'
-                                key={category}
-                                onClick={() => setCategory(category)}>
-                                {category}
-                            </li>
-
-                        ))}
-                    </ul>
                     
                         <Typography className='a123'>Ratings Above - </Typography>
                         <div className='ratingBox' >

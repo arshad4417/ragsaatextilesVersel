@@ -16,7 +16,7 @@ exports.newOrder = catchAsyncErrors(async (req, res, next) => {
     
     await sendEmail({
       email:user.email,
-      emailToAdmin:"arshadansari4417@gmail.com",
+      emailToAdmin:"ragsaatextiles@gmail.com",
       subject: 'Order Successfully from RagsaaTextiles',
       message:`Thankyou For Placing Order ${user.name} \n\n\nYour itemsPrice -${order.itemsPrice}\nYour GSTPrice -${order.taxPrice}\nYour Shipping Amount -${order.shippingPrice}\nYour Total Amount -${order.totalPrice}\n\n\n Your Product deliver by our corrier partner as soon as possible`,
   });

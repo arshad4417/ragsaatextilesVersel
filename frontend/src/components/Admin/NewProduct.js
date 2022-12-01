@@ -36,10 +36,13 @@ const NewProduct = () => {
 
   const categories = [
     "Kurties",
-    "Kid's",
-    "T-shirt",
-    "Shirt",
-    "Jeans",
+    "Kaftan",
+    "Night Suits",
+    "Shrug",
+    "Top",
+    "Short-Kurta",
+    "Embroideroi Ethenic Set",
+    "Suits"
 ]
 
   useEffect(() => {
