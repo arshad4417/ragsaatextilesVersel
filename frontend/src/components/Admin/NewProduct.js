@@ -28,6 +28,7 @@ const NewProduct = () => {
   const [Stock, setStock] = useState(0);
   const [images, setImages] = useState([]);
   const [imagesPreview, setImagesPreview] = useState([]);
+  const [SizeXS, SetSizeXS] = useState([]);
   const [SizeS, SetSizeS] = useState([]);
   const [SizeM, SetSizeM] = useState([]);
   const [SizeL, SetSizeL] = useState([]);
@@ -68,6 +69,7 @@ const NewProduct = () => {
     myForm.set("description", description);
     myForm.set("category", category);
     myForm.set("Stock", Stock);
+    myForm.set("SizeXS", SizeXS);
     myForm.set("SizeS", SizeS);
     myForm.set("SizeM", SizeM);
     myForm.set("SizeL", SizeL);
@@ -158,6 +160,12 @@ const NewProduct = () => {
             </div>
                   <div>
             <div>
+              <input
+                type="radio"
+                placeholder="Sizes"
+                value={2}
+                onChange={(e) => SetSizeXS(e.target.value)}
+              />XS
               <input
                 type="radio"
                 placeholder="Sizes"

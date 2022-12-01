@@ -69,6 +69,10 @@ const ProductDetails = (props) => {
     setQuantity(qty);
   };
   const sizeHandler = async(e) => {
+    if(e.target.value==="XS"){
+      alert.success("Size XS Selected")
+      await sessionStorage.setItem("SizeInfo", JSON.stringify(e.target.value))
+    }
     if(e.target.value==="S"){
       alert.success("Size S Selected")
       await sessionStorage.setItem("SizeInfo", JSON.stringify(e.target.value))
@@ -146,6 +150,7 @@ const ProductDetails = (props) => {
               <p>Product# {product._id}</p>
             </div>
             <div className="SizeButtons">
+              <button type="button" style={{margin:"0.5vmax"}} value={"XS"} disabled={product.SizeS > 1 ? false : true} onClick={sizeHandler} className="btn btn-outline-warning">XS</button>
               <button type="button" style={{margin:"0.5vmax"}} value={"S"} disabled={product.SizeS > 1 ? false : true} onClick={sizeHandler} className="btn btn-outline-warning">S</button>
               <button type="button" style={{margin:"0.5vmax"}} value={"M"} disabled={product.SizeM > 1 ? false : true} onClick={sizeHandler} className="btn btn-outline-warning">M</button>
               <button type="button" style={{margin:"0.5vmax"}} value={"L"} disabled={product.SizeL > 1 ? false : true} onClick={sizeHandler} className="btn btn-outline-warning">L</button>

@@ -65,6 +65,10 @@ const productSchema = new mongoose.Schema({
       },
     },
   ],
+  SizeXS: {
+    type: Number,
+    default:0,
+  },
   SizeS: {
     type: Number,
     default:0,
