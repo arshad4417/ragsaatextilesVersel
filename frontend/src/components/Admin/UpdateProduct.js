@@ -6,7 +6,7 @@ import {
   getProductDetails,
 } from "../../actions/productAction";
 import { useAlert } from "react-alert";
-import { Button } from "@material-ui/core"; 
+import { Button } from "@material-ui/core";
 import MetaData from "../layout/MetaData";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import DescriptionIcon from "@mui/icons-material/Description";
@@ -18,10 +18,10 @@ import { UPDATE_PRODUCT_RESET } from "../../constants/productConstants";
 import { useNavigate, useParams } from "react-router-dom";
 
 const UpdateProduct = (props) => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const alert = useAlert();
-  var {id} =useParams();
+  var { id } = useParams();
 
   const { error, product } = useSelector((state) => state.productDetails);
 
@@ -39,14 +39,23 @@ const UpdateProduct = (props) => {
   const [images, setImages] = useState([]);
   const [oldImages, setOldImages] = useState([]);
   const [imagesPreview, setImagesPreview] = useState([]);
+  const [SizeXS, SetSizeXS] = useState([]);
+  const [SizeS, SetSizeS] = useState([]);
+  const [SizeM, SetSizeM] = useState([]);
+  const [SizeL, SetSizeL] = useState([]);
+  const [SizeXL, SetSizeXL] = useState([]);
+  const [SizeXXL, SetSizeXXL] = useState([]);
 
   const categories = [
     "Kurties",
-    "Kid's",
-    "T-shirt",
-    "Shirt",
-    "Jeans",
-]
+    "Kaftan",
+    "Night Suits",
+    "Shrug",
+    "Top",
+    "Short-Kurta",
+    "Embroideroi Ethenic Set",
+    "Suits"
+  ]
   const productId = id;
 
   useEffect(() => {
@@ -96,6 +105,12 @@ const UpdateProduct = (props) => {
     myForm.set("description", description);
     myForm.set("category", category);
     myForm.set("Stock", Stock);
+    myForm.set("SizeXS", SizeXS);
+    myForm.set("SizeS", SizeS);
+    myForm.set("SizeM", SizeM);
+    myForm.set("SizeL", SizeL);
+    myForm.set("SizeXL", SizeXL);
+    myForm.set("SizeXXL", SizeXXL);
 
     images.forEach((image) => {
       myForm.append("images", image);
@@ -184,6 +199,46 @@ const UpdateProduct = (props) => {
                 ))}
               </select>
             </div>
+            <div>
+              <div>
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeXS(e.target.value)}
+                />XS
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeS(e.target.value)}
+                />S
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeM(e.target.value)}
+                />M
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeL(e.target.value)}
+                />L
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeXL(e.target.value)}
+                />XL
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeXXL(e.target.value)}
+                />XXL
+              </div></div>
+            <div></div>
 
             <div>
               <StorageIcon />

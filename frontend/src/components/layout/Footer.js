@@ -102,7 +102,7 @@ const Footer=() =>{
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                support@ragsaatextiles.com
+                ragsaatextiles@gmail.com.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> +91 9461933266

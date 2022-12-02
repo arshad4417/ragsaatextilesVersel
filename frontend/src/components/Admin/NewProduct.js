@@ -3,7 +3,7 @@ import "./newProduct.css";
 import { useSelector, useDispatch } from "react-redux";
 import { clearErrors, createProduct } from "../../actions/productAction";
 import { useAlert } from "react-alert";
-import { Button } from "@mui/material"; 
+import { Button } from "@mui/material";
 import MetaData from "../layout/MetaData";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import DescriptionIcon from "@mui/icons-material/Description";
@@ -15,7 +15,7 @@ import { NEW_PRODUCT_RESET } from "../../constants/productConstants";
 import { useNavigate } from "react-router-dom";
 
 const NewProduct = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const alert = useAlert();
 
@@ -44,7 +44,7 @@ const NewProduct = () => {
     "Short-Kurta",
     "Embroideroi Ethenic Set",
     "Suits"
-]
+  ]
 
   useEffect(() => {
     if (error) {
@@ -158,45 +158,45 @@ const NewProduct = () => {
                 ))}
               </select>
             </div>
-                  <div>
             <div>
-              <input
-                type="radio"
-                placeholder="Sizes"
-                value={2}
-                onChange={(e) => SetSizeXS(e.target.value)}
-              />XS
-              <input
-                type="radio"
-                placeholder="Sizes"
-                value={2}
-                onChange={(e) => SetSizeS(e.target.value)}
-              />S
-              <input
-                type="radio"
-                placeholder="Sizes"
-                value={2}
-                onChange={(e) => SetSizeM(e.target.value)}
-              />M
-              <input
-                type="radio"
-                placeholder="Sizes"
-                value={2}
-                onChange={(e) => SetSizeL(e.target.value)}
-              />L
-              <input
-                type="radio"
-                placeholder="Sizes"
-                value={2}
-                onChange={(e) => SetSizeXL(e.target.value)}
-              />XL
-              <input
-                type="radio"
-                placeholder="Sizes"
-                value={2}
-                onChange={(e) => SetSizeXXL(e.target.value)}
-              />XXL
-            </div></div>
+              <div>
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeXS(e.target.value)}
+                />XS
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeS(e.target.value)}
+                />S
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeM(e.target.value)}
+                />M
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeL(e.target.value)}
+                />L
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeXL(e.target.value)}
+                />XL
+                <input
+                  type="radio"
+                  placeholder="Sizes"
+                  value={2}
+                  onChange={(e) => SetSizeXXL(e.target.value)}
+                />XXL
+              </div></div>
             <div>
               <StorageIcon />
               <input
