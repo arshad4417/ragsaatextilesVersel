@@ -25,6 +25,7 @@ import { Typography } from '@material-ui/core'
     "Suits"
 ]
 
+
 const Products = (props) => {
     const dispatch = useDispatch();
     const alert = useAlert();
@@ -55,6 +56,7 @@ const Products = (props) => {
             <Header />
             <div className="main">
                 <div className="filterBox">
+                        <Typography className='a123'>Categories - </Typography>
                     <ul className='categoryBox' >
                         {categories.map((category) => (
                             <li className='category-link'
@@ -75,7 +77,6 @@ const Products = (props) => {
                             min={0}
                             max={9999}
                         /></div>
-                    <Typography className='a123'>Categories - </Typography>
                     
                         <Typography className='a123'>Ratings Above - </Typography>
                         <div className='ratingBox' >
