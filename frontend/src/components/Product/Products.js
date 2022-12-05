@@ -56,7 +56,7 @@ const Products = (props) => {
             <Header />
             <div className="main">
                 <div className="filterBox">
-                        <Typography className='a123'>Categories - </Typography>
+                    <Typography className='a123'>Categories - </Typography>
                     <ul className='categoryBox' >
                         {categories.map((category) => (
                             <li className='category-link'
