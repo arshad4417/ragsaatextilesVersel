@@ -21,7 +21,6 @@ import { Typography } from '@material-ui/core'
     "Shrug",
     "Top",
     "Short-Kurta",
-    "Embroideroi Ethenic Set",
     "Suits"
 ]
 
