@@ -56,8 +56,13 @@ const Header = () => {
                                 </Link>
                                 <ul className="dropdown-menu">
                                     <li><Link className="dropdown-item" to="/login">Login/SignUp</Link></li>
-                                    <li><hr className="dropdown-divider" /></li>
                                     <li><Link className="dropdown-item" to="/checkinprofile">User's Details</Link></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><a className="dropdown-item" href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/privacy'>Privacy Policy</a></li>
+                                    <li><a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/terms'className="dropdown-item">Terms and Conditions</a></li>
+                                    <li><a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/refund'className="dropdown-item">Cancellation and Refund</a></li>
+                                    <li><a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/shipping' className="dropdown-item">Shipping and Delivery</a></li>
+                                    <li><a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/contact_us' className="dropdown-item">Contact Us</a></li>
                                 </ul>
                             </li>
                         </ul>
