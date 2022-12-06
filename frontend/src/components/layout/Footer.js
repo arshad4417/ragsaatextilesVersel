@@ -49,22 +49,22 @@ const Footer=() =>{
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
-                <Link to='#!' className='text-reset'>
+                <Link to='/products' className='text-reset'>
                   Kurties
                 </Link>
               </p>
               <p>
-                <Link to='#!' className='text-reset'>
+                <Link to='/products' className='text-reset'>
                   Top
                 </Link>
               </p>
               <p>
-                <Link to='#!' className='text-reset'>
+                <Link to='/products' className='text-reset'>
                   Kaftan
                 </Link>
               </p>
               <p>
-                <Link to='#!' className='text-reset'>
+                <Link to='/products' className='text-reset'>
                   Shrug
                 </Link>
               </p>
@@ -73,24 +73,29 @@ const Footer=() =>{
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
-                <Link to='/contact' className='text-reset'>
-                  Support
-                </Link>
+                <a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/privacy' className='text-reset'>
+                Privacy Policy
+                </a>
               </p>
               <p>
-                <Link to='/account' className='text-reset'>
-                  UserDetails
-                </Link>
+                <a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/terms' className='text-reset'>
+                Terms and Conditions
+                </a>
               </p>
               <p>
-                <Link to='/order' className='text-reset'>
-                  Orders
-                </Link>
+                <a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/refund' className='text-reset'>
+                Cancellation and Refund
+                </a>
               </p>
               <p>
-                <Link to='/cart' className='text-reset'>
-                  Cart
-                </Link>
+                <a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/shipping' className='text-reset'>
+                Shipping and Delivery
+                </a>
+              </p>
+              <p>
+                <a href='https://merchant.razorpay.com/policy/Kmg87NUOF1fDKg/contact_us' className='text-reset'>
+                Contact Us
+                </a>
               </p>
             </MDBCol>
             
@@ -116,9 +121,9 @@ const Footer=() =>{
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2023 Copyright:
+        © 2022 Copyright : 
         <a className='text-reset fw-bold' target='_blank'  href='https://www.instagram.com/arshad_ansari_4417/'>
-          Arshad Hussain Ansari
+          Arshad Hussain Ansari (Developer)
         </a>
       </div>
     </MDBFooter>
