@@ -16,7 +16,7 @@ const About = () => {
         </div>
         <div className="down">
         <div className="item"><h2>About Work</h2></div>
-          <div className='p1'><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptates nihil ducimus harum odit! Ipsam inventore, voluptatum ex aliquam repudiandae dicta quibusdam quis non voluptatem incidunt, magnam atque placeat? Iste. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque enim corporis aperiam eaque maiores minus. Possimus obcaecati iusto modi beatae, cupiditate vel! Praesentium fugiat magnam cumque eveniet, tempora blanditiis a nisi eius dolorum maxime dicta quae neque, quisquam exercitationem! Minus ipsam corporis quae quis, repellat accusantium? Eius, ipsam magnam. Lorem ipsum dolor sit amet consectetur, adipisicing </p></div>
+          <div className='p1'><p>Ragsaa is a Jaipur based Indian and fusion wear clothing brand that focus on dressing up today modern age woman and make her feel beautiful and confident about herself.<br/><br/>The clothes are designed using the authentic hand block of Jaipur with prints that are exclusive . The dynamic fashion revolves around everyday wear to festive outfits and summer dresses. All are curated by the founder Mr Abrar Ahmed Ansai</p></div>
         </div></div>
       </div>
       <Footer />
