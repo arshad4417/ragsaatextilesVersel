@@ -3,8 +3,8 @@ const crypto=require("crypto");
 const { Payment } =require("../models/paymentModel.js");
 
 const instance = new Razorpay({
-    key_id: "rzp_test_7EQTkt9r0wP24o",
-    key_secret: "eZU2QVQohLxmhU4kMZLK36Ts",
+    key_id: "rzp_live_SkoQjxFFBCtwh4",
+    key_secret: "FowPENXFPUAA39AbwAX4Wcql",
   });
 
 exports.checkout = async (req, res) => {
@@ -24,7 +24,7 @@ exports.paymentVerification = async (req, res) => {
   const body = req.body.paymentt.razorpay_order_id + "|" + req.body.paymentt.razorpay_payment_id;
 
   const expectedSignature = crypto
-    .createHmac("sha256", "eZU2QVQohLxmhU4kMZLK36Ts")
+    .createHmac("sha256", "FowPENXFPUAA39AbwAX4Wcql")
     .update(body.toString())
     .digest("hex");
 
