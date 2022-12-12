@@ -7,18 +7,17 @@ const Carousal = () => {
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="https://source.unsplash.com/random/1900x500/?clothing"  className="d-block w-100" alt="..."  width="100vw"/>
+                        <img src="https://source.unsplash.com/random/1900x600/?clothing"  className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-none d-md-block">
                             <h1>Welcome to RagsaaTextiles</h1>
                             <p>RagsaaTextiles - Fashion Store on Your Hand</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://source.unsplash.com/random/1900x500/?textiles" className="d-block w-100" alt="..." width="100vw"/>
+                        <img src="https://source.unsplash.com/random/1900x600/?textiles" className="d-block w-100" alt="..."/>
                         <div className="carousel-caption d-none d-md-block">
                             <h1>Welcome to RagsaaTextiles</h1>
                             <p>RagsaaTextiles - Fashion Store on Your Hand</p>
