@@ -11,14 +11,14 @@ const Carousal = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="https://www.liveborders.org.uk/wp-content/uploads/2019/02/web-banner-bk.png"  className="d-block w-100" alt="..."  width="100vw"/>
+                        <img src="https://source.unsplash.com/random/1900x500/?clothing"  className="d-block w-100" alt="..."  width="100vw"/>
                         <div className="carousel-caption d-none d-md-block">
                             <h1>Welcome to RagsaaTextiles</h1>
                             <p>RagsaaTextiles - Fashion Store on Your Hand</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://www.liveborders.org.uk/wp-content/uploads/2019/02/web-banner-bk.png" className="d-block w-100" alt="..." width="100vw"/>
+                        <img src="https://source.unsplash.com/random/1900x500/?textiles" className="d-block w-100" alt="..." width="100vw"/>
                         <div className="carousel-caption d-none d-md-block">
                             <h1>Welcome to RagsaaTextiles</h1>
                             <p>RagsaaTextiles - Fashion Store on Your Hand</p>
